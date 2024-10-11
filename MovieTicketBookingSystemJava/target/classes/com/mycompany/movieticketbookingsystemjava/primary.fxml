@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="signIn_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="959.0" stylesheets="@designLoginForm.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.movieticketbookingsystemjava.PrimaryController">
+   <children>
+      <BorderPane prefHeight="614.0" prefWidth="959.0">
+         <right>
+            <Pane prefHeight="609.0" prefWidth="542.0" styleClass="linear-grad-pane" stylesheets="@designLoginForm.css" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane layoutY="-1.0" prefHeight="609.0" prefWidth="544.0" />
+                  <TextField fx:id="signIn_username" layoutX="109.0" layoutY="272.0" prefHeight="48.0" prefWidth="324.0" promptText="Username" styleClass="text-field-custom" stylesheets="@../../../../../../../MovieTicketBookingSystem/src/movieticketbookingsystem/designLogin.css">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="signIn_password" layoutX="110.0" layoutY="348.0" prefHeight="48.0" prefWidth="324.0" promptText="Password" styleClass="password-field-custom" stylesheets="@../../../../../../../MovieTicketBookingSystem/src/movieticketbookingsystem/designLogin.css">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="signIn_loginbtn" layoutX="195.0" layoutY="421.0" mnemonicParsing="false" onAction="#btn_loginActionperformed" prefHeight="38.0" prefWidth="166.0" styleClass="button-login" stylesheets="@../../../../../../../MovieTicketBookingSystem/src/movieticketbookingsystem/designLogin.css" text="Sign in">
+                     <font>
+                        <Font name="Calibri Light Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="signIn_createAccount" layoutX="172.0" layoutY="477.0" onAction="#switchToSecondary" prefHeight="11.0" prefWidth="210.0" styleClass="hyperlink-custom" stylesheets="@../../../../../../../MovieTicketBookingSystem/src/movieticketbookingsystem/designLogin.css" text="Don't have an account? Sign Up">
+                     <font>
+                        <Font name="Calibri Light" size="10.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fitHeight="149.0" fitWidth="169.0" layoutX="199.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="238.0" layoutY="224.0" prefHeight="31.0" prefWidth="84.0" text="Sign In">
+                     <font>
+                        <Font name="Calibri Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </right>
+         <center>
+            <Pane fx:id="signIn_" prefHeight="609.0" prefWidth="420.0" styleClass="linear-grad" stylesheets="@designLoginForm.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="48.0" layoutY="57.0" prefHeight="25.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <Label contentDisplay="CENTER" layoutX="56.0" layoutY="305.0" prefHeight="52.0" prefWidth="324.0" styleClass="label-custom" stylesheets="@designLoginForm.css" text="Movie Ticket Booking System">
+                     <font>
+                        <Font name="Calibri Light" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="357.0" prefHeight="17.0" prefWidth="308.0" styleClass="label-custom-tag" stylesheets="@designLoginForm.css" text="Book your ticket now and enjoy the magic of cinema!" textAlignment="RIGHT" />
+                  <Button layoutX="119.0" layoutY="452.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="166.0" styleClass="button-login-2" stylesheets="@designLoginForm.css" text="Book Ticket Now">
+                     <font>
+                        <Font name="Calibri Light Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="253.0" fitWidth="253.0" layoutX="82.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/download.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

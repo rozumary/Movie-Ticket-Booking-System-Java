@@ -1,0 +1,89 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 10, 2024, 7:32:04 PM
+    Author     : ASUS
+*/
+
+.bg-form {
+    -fx-background-color: linear-gradient(to top right, #fff8e1, #ff9999, #ff4d4d);
+}
+
+.linear-grad {
+    -fx-background-color: linear-gradient(to top right, #8B0000, #b03a2e, #d76d6d);
+}
+
+.linear-grad-pane {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #ffcccc, #ff9999);
+}
+
+.text-field-custom {
+    -fx-border-color: #B22222;
+    -fx-border-radius: 5px; 
+}
+
+.text-field-custom:focused {
+    -fx-border-color: #FF6347; 
+    -fx-background-color: #FFE4E1; 
+}
+
+.password-field-custom {
+    -fx-border-color: #B22222; 
+    -fx-border-radius: 5px;
+}
+
+.password-field-custom:focused {
+    -fx-border-color: #FF6347;
+    -fx-background-color: #FFE4E1;
+}
+
+.button-login {
+    -fx-background-color: #B22222;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 18px;
+    -fx-border-radius: 18px;
+}
+
+.button-login:hover {
+    -fx-background-color: linear-gradient(to bottom right, #FF6347, #B22222);
+}
+
+.hyperlink-custom {
+    -fx-text-fill: #B22222; 
+    -fx-font-size: 14px; 
+}
+
+.label-custom {
+    -fx-text-fill: white; 
+    -fx-font-size: 25px; 
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri"; 
+}
+
+.label-custom-tag {
+    -fx-text-fill: white; 
+    -fx-font-size: 14px; 
+    -fx-font-family: "Calibri Light"; 
+    -fx-font-style: italic;
+}
+
+.button-login-2 {
+    -fx-background-color: white;
+    -fx-text-fill: #B22222; 
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 18px;
+    -fx-border-radius: 18px;
+}
+
+.button-login-2:hover {
+    -fx-background-color: linear-gradient(to bottom right, #ffcccc, #ff9999);
+    -fx-text-fill: white;
+}
+
+
+
